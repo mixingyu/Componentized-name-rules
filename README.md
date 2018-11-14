@@ -60,7 +60,6 @@ _pr
 ![image](README/1.png)
 
 <br/>
-<br/>
 
 ![image](README/2.png)
 
