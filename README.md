@@ -1,6 +1,4 @@
-# Componentized-name-rules
-
-# neo组件化命名规范
+# Componentized-name-rules(neo组件化命名规范)
 
 <br/>
 
