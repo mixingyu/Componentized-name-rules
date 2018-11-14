@@ -48,15 +48,18 @@ _pr
 (.name_PG-index ._UI-aaa .ui-a-xxx)
 ```
 
-**本规范不完全限定任何使用方式，你可以自由调整。（规则是死的，人是活的。）**
+**本规范不限定任何使用方式，你可以自由调整。（规则是死的，人是活的。）**
+
+<br/>
+<br/>
 
 ## 截图 组件 | 组件-子组件 | 组件-所有子元素
 
-![image](README/1.png) ![image](README/2.png) ![image](README/3.png)
+![image](README/1.png)
 <br/>
-![image](README/4.png) ![image](README/5.png) ![image](README/6.png)
+![image](README/2.png)
 
 
-实例代码：
+### 实例代码：
 
 [vha-appDemo (Github)](https://github.com/neoStudioGroup/vha-appDemo)
