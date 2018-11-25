@@ -63,10 +63,10 @@ _pr
 ```
 /* 所有UI组件 */
 *[class*="UI-"]{/* outline: 1px solid red !important; */}
-/* 所有UI组件-所有子元素 */
-*[class*="UI-"] *{/* outline: 1px solid green !important; */}
 /* 所有UI组件-子元素 */
 *[class*="UI-"] *[class*="ui-"]{/* outline: 1px solid blue !important; */}
+/* 所有UI组件-所有子元素 */
+*[class*="UI-"] *{/* outline: 1px solid green !important; */}
 ```
 
 <br/>
