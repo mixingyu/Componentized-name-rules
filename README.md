@@ -11,15 +11,21 @@
 
 ## 统一原则：
 
-(前缀) (_全局||不相关) (PG||UI) (-分割) (驼峰名称)
+(前缀"_全局||不相关") (PG||UI) (-分割) (驼峰名称)
+
+注意"UI"不是固定的，我们可以换成企业代号如（TB，JD等）。
 
 ```
-// vue加入页面的分层
-_PG-name
+// 页面
+PG-name
   name_PG-子页面
   
+    // 全局组件
+    _UI-xxx  定义组件
+      ├ui-x-xxx    定义子元素
+    
     // 页内组件
-    p_UI-xxx  定义组件（加p（代表page）以区分全局组件）
+    UI-xxx  定义组件
       ├ui-x-xxx    定义子元素
 ```
 
@@ -31,21 +37,21 @@ _UI-aaa
 └─ui-a-b-ccc
 
 // 页内组件
-p_UI-bbb
+UI-bbb
 ├ui-b-aaa
 ├ui-b-bbb
 └─ui-b-b-ccc
 ```
 
 ```
-// css全局样式（无前缀）应用：class=“p_UI-xxx _pa _cl-aaa”
+// css全局样式（无前缀）应用：class=“UI-xxx _pa _cl-aaa”
 _pa
 _pr
 ```
 
 ```
 // 选择器
-(.name_PG-index ._UI-aaa .ui-a-xxx)
+(.name_PG-index .UI-aaa .ui-a-xxx)
 ```
 
 **本规范不限定任何使用方式，你可以自由调整。（规则是死的，人是活的。）**
@@ -54,6 +60,15 @@ _pr
 <br/>
 
 ## 截图 组件 | 组件-子组件 | 组件-所有子元素
+
+```
+/* 所有UI组件 */
+*[class*="UI-"]{/* outline: 1px solid red !important; */}
+/* 所有UI组件-所有子元素 */
+*[class*="UI-"] *{/* outline: 1px solid green !important; */}
+/* 所有UI组件-子元素 */
+*[class*="UI-"] *[class*="ui-"]{/* outline: 1px solid blue !important; */}
+```
 
 <br/>
 
