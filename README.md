@@ -22,10 +22,12 @@ PG-name
     // 全局组件
     _UI-xxx  定义组件
       ├ui-x-xxx    定义子元素
+      └─ui-xx-xxx    定义子元素
     
     // 页内组件
     UI-xxx  定义组件
       ├ui-x-xxx    定义子元素
+      └─ui-xx-xxx    定义子元素
 ```
 
 ```
@@ -33,13 +35,15 @@ PG-name
 _UI-aaa
 ├ui-a-aaa
 ├ui-a-bbb
-└─ui-a-b-ccc
+└─ui-ab-ccc
+└──ui-abc-ddd
 
 // 页内组件
 UI-bbb
 ├ui-b-aaa
 ├ui-b-bbb
-└─ui-b-b-ccc
+└─ui-bb-ccc
+└──ui-bbc-ddd
 ```
 
 ```
